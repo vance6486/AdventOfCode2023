@@ -1,0 +1,14 @@
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\bin\Debug\net7.0\AdventOfCode4.exe
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\bin\Debug\net7.0\AdventOfCode4.deps.json
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\bin\Debug\net7.0\AdventOfCode4.runtimeconfig.json
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\bin\Debug\net7.0\AdventOfCode4.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\bin\Debug\net7.0\AdventOfCode4.pdb
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.AssemblyInfoInputs.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.AssemblyInfo.cs
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.csproj.CoreCompileInputs.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\refint\AdventOfCode4.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.pdb
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\AdventOfCode4.genruntimeconfig.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode4\AdventOfCode4\obj\Debug\net7.0\ref\AdventOfCode4.dll
