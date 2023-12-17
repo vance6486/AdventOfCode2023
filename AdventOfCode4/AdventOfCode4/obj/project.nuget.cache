@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KlsSzQNzfTYPC+nArSVhI8MVXcz+XPD/mPt+kV8AgM03r6ZYpkPNp9CBUnDluCac+DS0i6vD/kzVcih7e1H+dg==",
+  "dgSpecHash": "dZgIS4lc4DnxPjfVm6QS3m3iN4goo20yXExW8tQhg+2y8HNCUqVvXTLW9eNEKK8/n0N2AELg+HM9jsdXSiQlMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Creon\\OneDrive\\Documents\\AdventOfCode2023\\AdventOfCode4\\AdventOfCode4\\AdventOfCode4.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Micha\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode4\\AdventOfCode4\\AdventOfCode4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Micha\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
