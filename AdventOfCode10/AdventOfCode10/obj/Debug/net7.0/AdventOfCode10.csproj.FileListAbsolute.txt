@@ -1,0 +1,14 @@
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\bin\Debug\net7.0\AdventOfCode10.exe
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\bin\Debug\net7.0\AdventOfCode10.deps.json
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\bin\Debug\net7.0\AdventOfCode10.runtimeconfig.json
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\bin\Debug\net7.0\AdventOfCode10.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\bin\Debug\net7.0\AdventOfCode10.pdb
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.AssemblyInfoInputs.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.AssemblyInfo.cs
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.csproj.CoreCompileInputs.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\refint\AdventOfCode10.dll
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.pdb
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\AdventOfCode10.genruntimeconfig.cache
+C:\Users\Creon\OneDrive\Documents\AdventOfCode2023\AdventOfCode10\AdventOfCode10\obj\Debug\net7.0\ref\AdventOfCode10.dll

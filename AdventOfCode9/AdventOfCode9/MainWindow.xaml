@@ -1,0 +1,19 @@
+﻿<Window x:Class="AdventOfCode9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdventOfCode9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Center" Height="298" Margin="0,45,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" Width="704" AcceptsReturn="True" FontFamily="Consolas"/>
+        <Label Content="Part 1:" HorizontalAlignment="Left" Margin="48,367,0,0" VerticalAlignment="Top" Height="27" Width="82"/>
+        <TextBox x:Name="txtPart1" HorizontalAlignment="Left" Margin="99,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Center" Margin="0,369,0,0" VerticalAlignment="Top" Width="64" Height="24" Click="btnCalculate_Click"/>
+        <Label Content="Part 2:" HorizontalAlignment="Left" Margin="535,367,0,0" VerticalAlignment="Top" Height="27" Width="82"/>
+        <TextBox x:Name="txtPart2" HorizontalAlignment="Left" Margin="586,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <CheckBox x:Name="chbReadFromFile" Content="Read From File" HorizontalAlignment="Left" Margin="48,25,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
