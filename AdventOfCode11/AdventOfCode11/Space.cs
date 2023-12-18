@@ -12,15 +12,15 @@ namespace AdventOfCode11
         public bool IsEmpty { get; private set; } = true;
         public Galaxy GalaxyContents { get; private set; } = null;
 
-        public int Row;
-        public int Col;
+        public long Row;
+        public long Col;
 
         public bool Visited = false;
-        public int Steps = 0;
+        public long Steps = 0;
 
         public Space() { }
 
-        public Space(char contentsChar, int row, int col)
+        public Space(char contentsChar, long row, long col)
         {
             Row = row; 
             Col = col;
@@ -33,5 +33,11 @@ namespace AdventOfCode11
         }
 
         public void ResetVisited() { Visited = false; }
+
+        public override bool Equals(object? obj)
+        {
+            if(obj is Space otherSpace) return Row == otherSpace.Row && Col == otherSpace.Col;
+            return false;
+        }
     }
 }

@@ -16,30 +16,76 @@ namespace AdventOfCode11
 
         private Queue<Space> spaceQueue;
 
-        private List<Galaxy> galaxyList = new List<Galaxy>();
+//        private List<Galaxy> galaxyList = new List<Galaxy>();
 
         public List<GalaxyPair> AllGalaxyPairs = new List<GalaxyPair>();
+
+        public List<int> blankRows = new List<int>();
+        public List<int> blankCols = new List<int>();
+
+        private readonly long ExpansionFactor = 999999;
 
         public Universe() { }
         
         public Universe(char[,] rawData)
         {
             RawData = rawData;
+            GenerateSpace();
+            PairGalaxies();
+            //FindLowestPairs();
         }
 
         public void GenerateSpace()
         {
             spaceArray = new Space[RawData.GetLength(0), RawData.GetLength(1)];
-            for(int row = 0; row < RawData.GetLength(0); row++)
+            for(long row = 0; row < RawData.GetLength(0); row++)
             {
-                for(int col = 0; col < RawData.GetLength(1); col++)
+                for(long col = 0; col < RawData.GetLength(1); col++)
                 {
                     spaceArray[row,col] = new Space(RawData[row,col], row, col);
 
-                    if (spaceArray[row, col].IsEmpty == false)
-                        galaxyList.Add(spaceArray[row, col].GalaxyContents);
+//                    if (spaceArray[row, col].IsEmpty == false)
+//                        galaxyList.Add(spaceArray[row, col].GalaxyContents);
 
                 }
+            }
+            CalculateBlankRows();
+            CalculateBlankCols();
+        }
+
+        public void CalculateBlankRows()
+        {
+            blankRows = new List<int>();
+            // check every row
+            for (long row = 0; row < spaceArray.GetLength(0); row++)
+            {
+                bool isRowBlank = true;
+                //check all columns in that row
+                for(long col = 0; col < spaceArray.GetLength(1); col++)
+                {
+                    if (spaceArray[row, col].IsEmpty == false)
+                        isRowBlank = false;
+                }
+
+                if(isRowBlank == true) blankRows.Add((int)row);
+            }
+        }
+
+        public void CalculateBlankCols()
+        {
+            blankCols = new List<int>();
+            // check every row
+            for (long col = 0; col < spaceArray.GetLength(1); col++)
+            {
+                bool isColBlank = true;
+                //check all columns in that row
+                for (long row = 0; row < spaceArray.GetLength(0); row++)
+                {
+                    if (spaceArray[row, col].IsEmpty == false)
+                        isColBlank = false;
+                }
+
+                if (isColBlank == true) blankCols.Add((int)col);
             }
         }
 
@@ -51,7 +97,9 @@ namespace AdventOfCode11
                 if (space.IsEmpty == false)
                 {
                     //reset the universes spaces
-                    space.ResetVisited();
+                    ResetVisited();
+
+                    space.Steps = -1;
 
                     //breadth first search
                     spaceQueue = new Queue<Space>();
@@ -60,16 +108,18 @@ namespace AdventOfCode11
                     while(spaceQueue.Count > 0)
                     {
                         Space tempSpace = spaceQueue.Dequeue();
+
                         WalkPath(space, tempSpace.Row, tempSpace.Col, tempSpace.Steps);
+
                     }
                 }
             }
 
             //once all the galaxies have been linked find the lowest pairs to mak
-            FindLowestPairs();
+            //FindLowestPairs();
         }
 
-        private void WalkPath(Space Source, int row, int col, int steps)
+        private void WalkPath(Space Source, long row, long col, long steps)
         {
             if (spaceArray[row, col].Visited == false)
             {
@@ -80,7 +130,8 @@ namespace AdventOfCode11
                 thisSpace.Visited = true;
 
                 //check for Galaxy
-                if(thisSpace.IsEmpty == false)
+                if(thisSpace.IsEmpty == false
+                    && Source != thisSpace)
                 {
                     //add pair
                     AllGalaxyPairs.Add(new GalaxyPair(Source.GalaxyContents, thisSpace.GalaxyContents, steps));
@@ -90,14 +141,25 @@ namespace AdventOfCode11
                 if(row > 0)
                 {
                     Space nextSpace = spaceArray[row - 1, col];
+  
                     nextSpace.Steps = steps;
+
+                    //add an extra space if moving into a blank row
+                    if (blankRows.IndexOf((int)row - 1) >= 0) nextSpace.Steps += ExpansionFactor;
+
                     spaceQueue.Enqueue(nextSpace);
                 }
                 //Walk South
                 if (row < spaceArray.GetLength(0)-1)
                 {
+                    
                     Space nextSpace = spaceArray[row + 1, col];
+
                     nextSpace.Steps = steps;
+
+                    //add an extra space if moving into a blank row
+                    if (blankRows.IndexOf((int)row + 1) >= 0) nextSpace.Steps += ExpansionFactor;
+
                     spaceQueue.Enqueue(nextSpace);
                 }
 
@@ -105,7 +167,12 @@ namespace AdventOfCode11
                 if (col > 0)
                 {
                     Space nextSpace = spaceArray[row, col - 1];
+
                     nextSpace.Steps = steps;
+
+                    //add an extra space if moving into a blank col
+                    if (blankCols.IndexOf((int)col - 1) >= 0) nextSpace.Steps += ExpansionFactor;
+
                     spaceQueue.Enqueue(nextSpace);
                 }
 
@@ -113,16 +180,40 @@ namespace AdventOfCode11
                 if (col < spaceArray.GetLength(1) - 1)
                 {
                     Space nextSpace = spaceArray[row, col + 1];
+
                     nextSpace.Steps = steps;
+
+                    //add an extra space if moving into a blank col
+                    if (blankCols.IndexOf((int)col + 1) >= 0) nextSpace.Steps += ExpansionFactor;
+
+                    spaceQueue.Enqueue(nextSpace);
                 }
             }
         }
 
-        public void FindLowestPairs()
+        //public void RemoveDuplicatePairs()
+        //{
+        //    List<Galaxy> processedGalaxies = new List<Galaxy>();
+
+        //    for(long i = 0; i < AllGalaxyPairs.Count; i++)
+        //    {
+        //        GalaxyPair lowestPair = AllGalaxyPairs[i];
+        //        Galaxy lowestA = lowestPair.GalaxyA;
+        //        Galaxy lowestB = lowestPair.GalaxyB;
+                
+        //    }
+        //}
+
+        public long GetPairTotal()
         {
-            List<GalaxyPair> tempGalaxyPairs = new List<GalaxyPair>();
-            AllGalaxyPairs.Sort();
-            
+            long total = 0;
+
+            foreach (GalaxyPair thispair in AllGalaxyPairs)
+            {
+                total += thispair.Distance;
+            }
+
+            return total/2;
         }
 
         public void ResetVisited()

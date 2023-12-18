@@ -8,14 +8,16 @@ namespace AdventOfCode11
 {
     internal class Galaxy
     {
-        public int Row { get; private set; }
-        public int Col { get; private set; }
-        public int Id { get; private set; }
+        public long Row { get; private set; }
+        public long Col { get; private set; }
+        public string Id { get; private set; }
 
         //public List<GalaxyPair> AllGalaxyPairs = new List<GalaxyPair>();
 
         public Galaxy PairedGalaxy = null;
         public bool HasPairedGalaxy {  get; private set; }
+
+        public long StepsToPair;
 
 
         public Galaxy()
@@ -24,43 +26,29 @@ namespace AdventOfCode11
             Col = 0;
         }
 
-        public Galaxy(int row, int col)
+        public Galaxy(long row, long col)
         {
             Row = row;
             Col = col;
 
-            Id = (row*1000) + col;
+            Id = $"{row,3}, {col,3}";
         }
 
-        //public void AddPair(Galaxy otherGalaxy, int distance)
-        //{
-        //    if(this != otherGalaxy)
-        //    {
-        //        AllGalaxyPairs.Add(new GalaxyPair(this, otherGalaxy, distance));
-        //        AllGalaxyPairs.Sort();
-        //    }
-                
-        //}
-
-        //public bool hasGalaxyPair(Galaxy otherGalaxy)
-        //{
-        //    bool hasPair = false;
-
-        //    foreach (GalaxyPair pair in AllGalaxyPairs)
-        //    {
-        //        if(pair.GalaxyB == otherGalaxy)
-        //        {
-        //            hasPair = true;
-        //        }
-        //    }
-
-        //    return hasPair;
-        //}
+        public void PairGalaxy(Galaxy galaxy, long steps)
+        {
+            HasPairedGalaxy = true;
+            PairedGalaxy = galaxy;
+            StepsToPair = steps;
+        }
 
         public override bool Equals(object obj)
         {
             return Id.Equals(((Galaxy)obj).Id);
         }
 
+        public override string ToString()
+        {
+            return Id.ToString();
+        }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.AssemblyInfoInputs.cache
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.AssemblyInfo.cs
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.csproj.CoreCompileInputs.cache
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.sourcelink.json
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\bin\Debug\net8.0\AdventOfCode11.exe
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\bin\Debug\net8.0\AdventOfCode11.deps.json
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\bin\Debug\net8.0\AdventOfCode11.runtimeconfig.json
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\bin\Debug\net8.0\AdventOfCode11.dll
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\bin\Debug\net8.0\AdventOfCode11.pdb
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.dll
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\refint\AdventOfCode11.dll
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.pdb
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\AdventOfCode11.genruntimeconfig.cache
+C:\Users\Creon\OneDrive\Documents\GitHub\AdventOfCode2023\AdventOfCode11\AdventOfCode11\obj\Debug\net8.0\ref\AdventOfCode11.dll

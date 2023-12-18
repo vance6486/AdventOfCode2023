@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Micha\\source\\repos\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj": {}
+    "C:\\Users\\Creon\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Micha\\source\\repos\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj": {
+    "C:\\Users\\Creon\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Micha\\source\\repos\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj",
+        "projectUniqueName": "C:\\Users\\Creon\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj",
         "projectName": "AdventOfCode11",
-        "projectPath": "C:\\Users\\Micha\\source\\repos\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj",
-        "packagesPath": "C:\\Users\\Micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Micha\\source\\repos\\AdventOfCode11\\AdventOfCode11\\obj\\",
+        "projectPath": "C:\\Users\\Creon\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode11\\AdventOfCode11\\AdventOfCode11.csproj",
+        "packagesPath": "C:\\Users\\Creon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Creon\\OneDrive\\Documents\\GitHub\\AdventOfCode2023\\AdventOfCode11\\AdventOfCode11\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Creon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
